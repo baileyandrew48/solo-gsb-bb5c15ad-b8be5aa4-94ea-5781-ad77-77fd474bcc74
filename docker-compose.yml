@@ -1,0 +1,7 @@
+services:
+  redaction-api:
+    build: .
+    image: archive-redaction-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
